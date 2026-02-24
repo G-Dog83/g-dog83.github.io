@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Useful Cyber Links - G-Dog83</title>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+		<link
+			rel="shortcut icon"
+			href="..\images\G-Dog83.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<div class="nav-content">
+					<a
+						href="index.html"
+						class="logo"
+						>G-Dog83</a
+					>
+					<div class="nav-links">
+						<a
+							href="index.html"
+							class="nav-link"
+							>Home</a
+						>
+						<a
+							href="socials.html"
+							class="nav-link"
+							>Socials</a
+						>
+						<a
+							href="certifications.html"
+							class="nav-link"
+							>Certifications</a
+						>
+						<a
+							href="osint.html"
+							class="nav-link active"
+							>Useful Cyber Links</a
+						>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<main class="container">
+			<section class="section">
+				<h1 class="title">Useful Cyber Links</h1>
+				<p class="subtitle">
+					Please find a collection of useful cyber security resources and links
+					that I have found helpful in my career. I will continue to update this
+					page as I find more resources that I think would be helpful to others
+					in the industry. I've started this list with OSINT links that I use
+					daily to check varioyus IPs, domains, and hashes (Indicators of
+					Compromise, or IoC's) when triaging security incidents. Feel free to
+					reach out if you have any suggestions for resources to add!
+				</p>
+			</section>
+
+			<div class="projects-grid">
+				<article class="project-card">
+					<div class="project-content">
+						<h2 class="project-title">
+							<img
+								src="..\images\abuseipdb-logo.svg"
+								width="50"
+								height="50"
+							/>
+							<br />AbuseIPDB
+						</h2>
+						<p class="project-description">
+							AbuseIPDB is a tool used to report IP address's associated with
+							malicious activity, or check to see if an IP address has been
+							reported, by using this tool. <br />
+							I use this tool to check the reputations of IoC's, and what they
+							may have bene reported for in the past.
+						</p>
+						<div class="project-links">
+							<a
+								href="https://www.abuseipdb.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="project-link"
+								>Link to Tool
+							</a>
+						</div>
+					</div>
+				</article>
+				<article class="project-card">
+					<div class="project-content">
+						<h2 class="project-title">
+							<img
+								src="..\images\shodan.webp"
+								width="115"
+								height="50"
+							/>
+							<br />Shodan
+						</h2>
+						<p class="project-description">
+							Shodan is a search engine for Internet-connected devices. You can
+							use this to search for IP addresses and see what devices / domains
+							are hosted on it, as well as what open ports the relevant web
+							servers have open, and OS level information. <br />
+							I use this tool to get more information about IoC's, and what they
+							are used for.
+						</p>
+						<div class="project-links">
+							<a
+								href="https://www.shodan.io/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="project-link"
+								>Link to Tool
+							</a>
+						</div>
+					</div>
+				</article>
+				<article class="project-card">
+					<div class="project-content">
+						<h2 class="project-title">
+							<img
+								src="..\images\VT.png"
+								width="115"
+								height="50"
+							/>
+							<br />VirusTotal
+						</h2>
+						<p class="project-description">
+							VirusTotal is a tool that allows you to upload files or paste URLs
+							for analysis by multiple antivirus engines and other security
+							tools. <br />
+							I use this tool to analyze suspicious files and URLs that are
+							associated with IoC's.
+						</p>
+						<div class="project-links">
+							<a
+								href="https://www.virustotal.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="project-link"
+								>Link to Tool
+							</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</main>
+	</body>
+</html>
