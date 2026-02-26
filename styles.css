@@ -8,16 +8,16 @@ body {
 	font-family:
 		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
 		Arial, sans-serif;
-	background-color: #ffffff;
-	color: #111827;
+	background-color: #353e43;
+	color: #ffffff;
 	line-height: 1.6;
 	min-height: 100vh;
 }
 
 /* Navigation */
 .nav {
-	border-bottom: 1px solid #e5e7eb;
-	background-color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+	background-color: #353e43;
 }
 
 .container {
@@ -35,7 +35,7 @@ body {
 .logo {
 	font-size: 1.25rem;
 	font-weight: 500;
-	color: #111827;
+	color: #a538ff;
 	text-decoration: none;
 }
 
@@ -51,17 +51,17 @@ body {
 }
 
 .nav-link {
-	color: #6b7280;
+	color: #ffffff;
 	text-decoration: none;
 	transition: color 0.2s;
 }
 
 .nav-link:hover {
-	color: #111827;
+	color: #a538ff;
 }
 
 .nav-link.active {
-	color: #111827;
+	color: #a538ff;
 }
 
 /* Main Content */
@@ -76,13 +76,13 @@ main {
 .title {
 	font-size: 2.25rem;
 	font-weight: 500;
-	color: #111827;
+	color: #ffffff;
 	margin-bottom: 1rem;
 }
 
 .subtitle {
 	font-size: 1.125rem;
-	color: #6b7280;
+	color: #ffffff;
 	max-width: 42rem;
 	line-height: 1.7;
 }
@@ -90,12 +90,12 @@ main {
 .section-title {
 	font-size: 1.5rem;
 	font-weight: 500;
-	color: #111827;
+	color: #ffffff;
 	margin-bottom: 1.5rem;
 }
 
 .text-content {
-	color: #6b7280;
+	color: #ffffff;
 	max-width: 42rem;
 }
 
@@ -111,14 +111,14 @@ main {
 }
 
 .project-card {
-	border: 1px solid #e5e7eb;
+	border: 1px solid #ffffff;
 	border-radius: 0.5rem;
 	padding: 1.5rem;
 	transition: border-color 0.2s;
 }
 
 .project-card:hover {
-	border-color: #d1d5db;
+	border-color: #a538ff;
 }
 
 .project-content {
@@ -130,11 +130,11 @@ main {
 .project-title {
 	font-size: 1.5rem;
 	font-weight: 500;
-	color: #111827;
+	color: #ffffff;
 }
 
 .project-description {
-	color: #6b7280;
+	color: #ffffff;
 	line-height: 1.6;
 }
 
@@ -146,8 +146,8 @@ main {
 
 .tag {
 	padding: 0.25rem 0.75rem;
-	background-color: #f3f4f6;
-	color: #374151;
+	background-color: #627077;
+	color: #ffffff;
 	font-size: 0.875rem;
 	border-radius: 9999px;
 }
@@ -188,7 +188,7 @@ main {
 }
 
 .social-card:hover {
-	border-color: #d1d5db;
+	border-color: #a538ff;
 }
 
 .social-content {
@@ -198,7 +198,7 @@ main {
 
 .social-icon {
 	padding: 0.5rem;
-	background-color: #f3f4f6;
+	background-color: #ffffff;
 	border-radius: 0.5rem;
 	flex-shrink: 0;
 	transition: background-color 0.2s;
@@ -212,7 +212,7 @@ main {
 }
 
 .social-icon svg {
-	color: #374151;
+	color: #353e43;
 }
 
 .social-info {
@@ -224,17 +224,17 @@ main {
 
 .social-name {
 	font-weight: 500;
-	color: #111827;
+	color: #ffffff;
 }
 
 .social-username {
 	font-size: 0.875rem;
-	color: #6b7280;
+	color: #ffffff;
 }
 
 .social-description {
 	font-size: 0.875rem;
-	color: #6b7280;
+	color: #ffffff;
 	margin-top: 0.25rem;
 }
 
