@@ -17,6 +17,11 @@ ex. [@G-Dog83](https://github.com/G-Dog83)
   - 24/02/26
   - Initial Release
 
+- 0.2
+  - 13/09/26
+  - Added a Photography page as I've been getting into photgraphy
+  - Made the site more mobile friendly
+
 ## License(s)
 
 I don't believe this project requires a license.
