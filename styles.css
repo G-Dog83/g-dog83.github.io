@@ -355,6 +355,58 @@ main {
 	cursor: pointer;
 }
 
+/* Certification groups */
+.cert-group {
+	margin-bottom: 1.5rem;
+	border: 1px solid var(--border);
+	border-radius: 0.75rem;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.cert-group summary {
+	list-style: none;
+	cursor: pointer;
+	padding: 1rem 1.25rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--text);
+	background: rgba(165, 56, 255, 0.08);
+	transition: background-color 0.2s ease;
+}
+
+.cert-group summary::-webkit-details-marker {
+	display: none;
+}
+
+.cert-group summary::after {
+	content: "+";
+	float: right;
+	font-size: 1.5rem;
+	line-height: 1;
+	color: var(--purple);
+}
+
+.cert-group[open] summary::after {
+	content: "−";
+}
+
+.cert-group summary:hover {
+	background: rgba(165, 56, 255, 0.12);
+}
+
+.cert-group-content {
+	padding: 1rem;
+}
+
+.cert-group-content .project-card {
+	margin-bottom: 1rem;
+}
+
+.cert-group-content .project-card:last-child {
+	margin-bottom: 0;
+}
+
 /* Tablet and up */
 @media (min-width: 640px) {
 	.container {
