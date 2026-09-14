@@ -204,6 +204,135 @@ main {
 	color: #111827;
 }
 
+/* CV */
+.cv-page {
+	max-width: 52rem;
+}
+
+.cv-actions {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.cv-print-button {
+	border: 1px solid var(--border);
+	border-radius: 0.25rem;
+	padding: 0.6rem 0.9rem;
+	background: transparent;
+	color: var(--text);
+	font: inherit;
+	cursor: pointer;
+}
+
+.cv-print-button:hover,
+.cv-print-button:focus-visible {
+	border-color: var(--purple);
+	color: var(--purple);
+}
+
+.cv-header {
+	border-bottom: 2px solid var(--purple);
+	padding-bottom: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.cv-header .title {
+	margin-bottom: 0.25rem;
+}
+
+.cv-role {
+	font-size: 1.25rem;
+	color: var(--purple);
+	margin-bottom: 0.5rem;
+}
+
+.cv-contact {
+	color: var(--text);
+	word-break: break-word;
+}
+
+.cv-section {
+	margin-bottom: 2rem;
+}
+
+.cv-section-title {
+	border-bottom: 1px solid var(--purple);
+	padding-bottom: 0.4rem;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: var(--purple);
+}
+
+.cv-skill-list p,
+.cv-entry p {
+	margin-bottom: 0.5rem;
+}
+
+.cv-entry {
+	margin-bottom: 1.5rem;
+}
+
+.cv-entry:last-child {
+	margin-bottom: 0;
+}
+
+.cv-entry-heading {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.cv-entry h3 {
+	font-size: 1.05rem;
+	font-weight: 600;
+}
+
+.cv-entry-heading span,
+.cv-entry-company {
+	color: var(--text);
+	opacity: 0.85;
+}
+
+.cv-entry ul,
+.cv-list-columns {
+	padding-left: 1.25rem;
+}
+
+.cv-list-columns {
+	columns: 2;
+}
+
+@media print {
+	:root {
+		--bg: #ffffff;
+		--text: #111111;
+		--border: #222222;
+	}
+
+	.nav,
+	.cv-actions {
+		display: none;
+	}
+
+	main.cv-page {
+		max-width: none;
+		padding: 0;
+	}
+
+	.cv-header {
+		border-color: #111111;
+	}
+
+	.cv-section-title,
+	.cv-role {
+		color: #111111;
+	}
+}
+
 /* Socials Grid */
 .socials-grid {
 	display: grid;
@@ -338,6 +467,21 @@ main {
 	object-fit: contain;
 	border-radius: 0.75rem;
 	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-caption {
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	max-width: min(90vw, 60rem);
+	transform: translateX(-50%);
+	margin: 0;
+	padding: 0.5rem 0.9rem;
+	border-radius: 0.25rem;
+	background: rgba(0, 0, 0, 0.7);
+	color: var(--text);
+	text-align: center;
+	font-size: 1rem;
 }
 
 .lightbox-close {
