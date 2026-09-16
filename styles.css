@@ -141,6 +141,22 @@ main {
 	gap: 2rem;
 }
 
+.vendor-giac {
+	order: 1;
+}
+
+.vendor-cisco {
+	order: 2;
+}
+
+.vendor-microsoft {
+	order: 3;
+}
+
+.vendor-arcx {
+	order: 4;
+}
+
 .project-card {
 	border: 1px solid var(--border);
 	border-radius: 0.5rem;
@@ -172,6 +188,13 @@ main {
 .cert-title-link:hover,
 .cert-title-link:focus-visible {
 	text-decoration: underline;
+}
+
+.cert-date {
+	margin: -0.5rem 0 0;
+	color: var(--text-muted);
+	font-size: 0.9rem;
+	font-weight: 600;
 }
 
 .project-description {
@@ -557,12 +580,50 @@ main {
 	padding: 1rem;
 }
 
-.cert-group-content .project-card {
-	margin-bottom: 1rem;
+.cert-group-content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
-.cert-group-content .project-card:last-child {
-	margin-bottom: 0;
+.vendor-microsoft .project-card:nth-of-type(2),
+.vendor-cisco .project-card:nth-of-type(9) {
+	order: 1;
+}
+
+.vendor-cisco .project-card:nth-of-type(8) {
+	order: 2;
+}
+
+.vendor-cisco .project-card:nth-of-type(7),
+.vendor-cisco .project-card:nth-of-type(6) {
+	order: 3;
+}
+
+.vendor-cisco .project-card:nth-of-type(5) {
+	order: 4;
+}
+
+.vendor-cisco .project-card:nth-of-type(4) {
+	order: 5;
+}
+
+.vendor-cisco .project-card:nth-of-type(3) {
+	order: 6;
+}
+
+.vendor-cisco .project-card:nth-of-type(2) {
+	order: 7;
+}
+
+.vendor-cisco .project-card:nth-of-type(1) {
+	order: 8;
+}
+
+.vendor-microsoft .project-card:nth-of-type(1),
+.vendor-giac .project-card:nth-of-type(1),
+.vendor-arcx .project-card:nth-of-type(1) {
+	order: 1;
 }
 
 /* Tablet and up */
