@@ -157,6 +157,52 @@ main {
 	order: 4;
 }
 
+.certifications-page .vendor-cisco,
+.badges-page .vendor-giac,
+.badges-page .vendor-microsoft,
+.badges-page .vendor-arcx {
+	display: none;
+}
+
+.badges-page .projects-grid {
+	display: none;
+}
+
+.badge-wall {
+	margin-bottom: 3rem;
+}
+
+.badge-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.badge-tile {
+	display: grid;
+	place-items: center;
+	aspect-ratio: 1;
+	padding: 1rem;
+	border: 1px solid var(--border);
+	border-radius: 0.5rem;
+	background-color: var(--panel);
+	transition:
+		border-color 0.2s ease,
+		transform 0.2s ease;
+}
+
+.badge-tile:hover,
+.badge-tile:focus-visible {
+	border-color: var(--purple);
+	transform: translateY(-0.2rem);
+}
+
+.badge-tile img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
 .project-card {
 	border: 1px solid var(--border);
 	border-radius: 0.5rem;
@@ -628,6 +674,10 @@ main {
 
 /* Tablet and up */
 @media (min-width: 640px) {
+	.badge-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
 	.container {
 		padding: 0 1.5rem;
 	}
